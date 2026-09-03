@@ -1,0 +1,560 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1e293b;
+    background-color: #f8fafc;
+}
+
+
+
+header {
+    background-color: #0f172a;
+    color: white;
+
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 26px;
+    color: #3b82f6;
+}
+
+
+/* Navigation */
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3b82f6;
+}
+
+
+
+
+#presentation {
+    min-height: 500px;
+
+    padding: 80px 10%;
+
+    background-color: #eaf2ff;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Titre */
+
+#presentation h2 {
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 35px;
+
+    color: #0f172a;
+
+    margin-bottom: 20px;
+}
+
+
+/* Image */
+
+#presentation img {
+    width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 7px solid white;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+    flex-shrink: 0;
+}
+
+
+/* Paragraphes */
+
+#presentation p {
+    flex: 1;
+
+    min-width: 250px;
+
+    font-size: 18px;
+
+    color: #475569;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================
+   SECTION COMPETENCES
+   ========================================= */
+
+#competences {
+    padding: 80px 10%;
+
+    background-color: white;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+/* Titre principal */
+
+#competences > h2 {
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 35px;
+
+    color: #0f172a;
+
+    margin-bottom: 20px;
+}
+
+
+/* Sous-titres */
+
+#competences h3 {
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 22px;
+
+    color: #2563eb;
+
+    margin-top: 20px;
+}
+
+
+/* Listes */
+
+#competences ul {
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    width: 100%;
+
+    flex-wrap: wrap;
+}
+
+
+/* Chaque compétence */
+
+#competences li {
+    background-color: #f1f5f9;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 10px;
+
+    padding: 20px 40px;
+
+    min-width: 180px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    color: #334155;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+}
+
+
+/* Animation au survol */
+
+#competences li:hover {
+    background-color: #2563eb;
+
+    color: white;
+
+    transform: translateY(-5px);
+}
+
+
+/* =========================================
+   SECTION CONTACT
+   ========================================= */
+
+#contact {
+    padding: 80px 10%;
+
+    background-color: #eaf2ff;
+}
+
+
+/* Titre */
+
+#contact h2 {
+    text-align: center;
+
+    font-size: 35px;
+
+    color: #0f172a;
+
+    margin-bottom: 40px;
+}
+
+
+/* Formulaire */
+
+#contact form {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Chaque bloc */
+
+#contact form div {
+    margin-bottom: 20px;
+}
+
+
+/* Labels */
+
+#contact label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    color: #334155;
+}
+
+
+/* Champs */
+
+#contact input,
+#contact textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 6px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: border-color 0.3s ease;
+}
+
+
+/* Focus */
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #2563eb;
+}
+
+
+/* Textarea */
+
+#contact textarea {
+    resize: vertical;
+}
+
+
+/* =========================================
+   BOUTON
+   ========================================= */
+
+#contact button {
+    display: block;
+
+    margin: 10px auto 0;
+
+    padding: 13px 30px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+
+#contact button:hover {
+    background-color: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background-color: #0f172a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLETTES
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+
+    /* Présentation */
+
+    #presentation {
+        padding: 60px 7%;
+
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    #presentation img {
+        width: 220px;
+        height: 220px;
+
+        margin: 0 auto;
+    }
+
+    #presentation p {
+        flex-basis: 100%;
+
+        text-align: left;
+    }
+
+
+    /* Compétences */
+
+    #competences {
+        padding: 60px 7%;
+    }
+
+    #competences li {
+        min-width: 200px;
+    }
+
+
+    /* Contact */
+
+    #contact {
+        padding: 60px 7%;
+    }
+
+    #contact form {
+        padding: 30px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE - TELEPHONES
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    /* Header */
+
+    header {
+        padding: 18px 5%;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+
+    /* Présentation */
+
+    #presentation {
+        padding: 50px 5%;
+
+        flex-direction: column;
+    }
+
+    #presentation h2 {
+        font-size: 28px;
+    }
+
+    #presentation img {
+        width: 180px;
+        height: 180px;
+    }
+
+    #presentation p {
+        min-width: 100%;
+
+        font-size: 16px;
+    }
+
+
+    /* Compétences */
+
+    #competences {
+        padding: 50px 5%;
+    }
+
+    #competences > h2 {
+        font-size: 28px;
+    }
+
+    #competences h3 {
+        font-size: 20px;
+    }
+
+    #competences ul {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    #competences li {
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+
+    /* Contact */
+
+    #contact {
+        padding: 50px 5%;
+    }
+
+    #contact h2 {
+        font-size: 28px;
+    }
+
+    #contact form {
+        padding: 20px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        font-size: 14px;
+    }
+}
